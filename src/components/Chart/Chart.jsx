@@ -14,8 +14,6 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
         fetchApi();
     },[]);
 
-    console.log("dailyData: ", dailyData);
-
     const lineChart = (
         dailyData.length
         ?  (   
@@ -36,8 +34,6 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
         }} />) : null
 
     );
-
-    console.log(confirmed, recovered, deaths);
 
     const barChart = (
         confirmed
